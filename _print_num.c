@@ -10,8 +10,8 @@
 
 int ft_print_num(int number)
 {
-	int c;//count of printed chars
-	char *converted_num;//to hold the converted number in string format
+	int c;
+	char *converted_num;
 
 	c  = 0;
 	converted_num = ft_itoa(number);

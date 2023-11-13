@@ -9,8 +9,8 @@
 
  int ft_print_str(char *s)
 {
-	int count;//to count printed characters
-	int i;//to traverse the string s
+	int count;
+	int i;
 
 	i = -1;
 	count = 0;

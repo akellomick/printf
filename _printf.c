@@ -9,9 +9,9 @@
 
 int _printf(const char *format, ...)
 {
-	int count_printed;//numbre of characters printed
-	va_list ap;//variable to work with the stdarg.h macros
-	int i;//index to traverse the string format
+	int count_printed;
+	va_list ap;
+	int i;
 
 	count_printed = 0;
 	va_start(ap, format);
