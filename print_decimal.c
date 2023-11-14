@@ -8,19 +8,18 @@
  */
 int print_decimal(va_list args)
 {
-    int num, itr = 0;
+	int num, itr = 0;
 
-    num = va_arg(args, int);
+	num = va_arg(args, int);
 
-    if (num < 0)
-    {
-        _putchar('-');
-        num = -num;
-        itr++;
-    }
+	if (num < 0)
+	{
+		_putchar('-');
+		num = -num;
+		itr++;
+	}
 
-    itr += print_num(num);
+	itr += print_num(num);
 
-    return itr;
+	return (itr);
 }
-~  

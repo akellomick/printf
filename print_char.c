@@ -8,10 +8,10 @@
  */
 int print_char(va_list arg)
 {
-        char c;
+	char c;
 
-        c = va_arg(arg, int);
-        _putchar(c);
-        return (1);
+	c = va_arg(arg, int);
+	_putchar(c);
+
+	return (1);
 }
-

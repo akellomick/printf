@@ -2,24 +2,24 @@
 
 /**
  * print_string - prints string.
- * @arg: argument.
+ * @args: argument.
  *
  * Return: the length of the string.
  */
 int print_string(va_list args)
 {
-    char *str;
-    int len, itr;
+	char *str;
+	int len, itr;
 
-    str = va_arg(args, char*);
+	str = va_arg(args, char*);
 
-    if (str == NULL)
-        str = "(null)";
+	if (str == NULL)
+		str = "(nil)";
 
-    len = getlength(str);
-    for (itr = 0; itr < len; itr++)
-        _putchar(str[itr]);
+	len = getlength(str);
 
-    return len;
+	for (itr = 0; itr < len; itr++)
+		_putchar(str[itr]);
+
+	return (len);
 }
-
